@@ -1,12 +1,21 @@
 // Crystals Collector Game
 
-//Generate random number for user between 19 - 120
-var userRandom = getRandomInt(19, 120);
-console.log("userRandom: ", userRandom);
-//Place random number for user in user box
-$(".userNumber").text(userRandom);
+var sum;
+var userRandom;
+var crystalValue;
 
-var sum = 0;
+//Generate random number for user between 19 - 120
+startGame = function (){
+
+  userRandom = getRandomInt(19, 120);
+  console.log("userRandom: ", userRandom);
+  //Place random number for user in user box
+  $(".userNumber").text(userRandom);
+
+   sum = 0;
+}
+
+startGame();
 
 //Generate random number for sapphire gem between 1 - 12
 var rubyRandom = getRandomInt(1, 12);
@@ -38,23 +47,21 @@ function getRandomInt(min, max) {
 // function startGame();
 $(".crystal").click(function () {
   //Add each gem click event to gem total box
-  var crystalValue = parseInt($(this).val());
+  crystalValue = parseInt($(this).val());
   console.log(crystalValue);
   sum = crystalValue + sum;
+  $(".crystalValue").html(sum);
   console.log(sum);
   //Total gems# == user#, then "You Win!"
-  if (sum == userRandom) {
-    wins++
-    // startGame();
+  if (sum === userRandom) {
+    wins++;
+    $("#wins").text(wins);
+    startGame();
   } 
   //Total gems# > user#, then "You Lose!"
   if (sum > userRandom) {
-    losses++
-    // startGame();
+    losses++;
+    $("#losses").text(losses);
+    startGame();
   }
-
-  //Restart game
-
 });
-
-// startGame();
