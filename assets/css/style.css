@@ -1,0 +1,61 @@
+h1{
+    font-size: 45px;
+
+}
+
+
+body {
+  /* background: src("background.jpg"); */
+  /* background-image: url()("http://www.fotolog.com/biancaperes_bia/183000000000027845/"); */
+ 
+  /* background-image: url("https://www.youtube.com/watch?v=CkKhgCXphO0"); */
+
+   background-image: url("images/background.jpg");
+   background-repeat: repeat;
+}
+
+p{
+    font-size: 35px;
+}
+
+img {
+  box-sizing: border-box;
+  width: 124px;
+  height: 124px;
+  padding: 20px;
+
+}
+
+div {
+    height: 90px;
+    width: 90px;
+    padding: 35px;
+    text-align: center;
+    margin-top: 18px;
+    font-size: 45px;
+    background-color: yellow;
+    color: black;
+}
+
+aside {
+    padding: 20px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    background-color: blue;
+    font: white;
+    float: left;
+    width: 90px;
+    height: 90px;
+    font-size: 18px;
+}
+
+section {
+    height: 90px;
+    width: 90px;
+    padding: 35px;
+    text-align: center;
+    margin-top: 18px;
+    font-size: 45px;
+    background-color: green;
+    color: black;
+}

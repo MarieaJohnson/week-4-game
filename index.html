@@ -1,0 +1,56 @@
+<!-- Crystals Collector Game - HTML -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="assets/css/style.css" rel="stylesheet">
+  <script src="http://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+  <title>Crystals Collector Game</title>
+</head>
+
+  <h1>Crystals Collector Game</h1>
+
+<body>
+  <p>You will be given a random number at the start of the game.
+
+    There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.
+
+    You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.
+
+    The value of each crystal is hidden from you until you click on it.
+
+    Each time when the game starts, the game will change the values of each crystal.
+  </p>
+
+<!-- Background pattern here -->
+  <img src="assets/images/background.jpg" alt="background">
+
+  <container>
+
+  <!-- <div> userRandom number box here </div> -->
+  <div class = "userNumber"> </div>
+
+  <aside>
+    Wins: =  "wins";
+    Losses: = losses;
+  </aside> 
+ 
+  <img src="assets/images/ruby_gem2.jpeg" alt="ruby_gem" class = "ruby crystal">
+  <img src="assets/images/diamond_gem.jpeg" alt="diamond_gem" class = "diamond crystal">
+  <img src="assets/images/emerald_gem.jpeg" alt="emerald_gem" class = "emerald crystal">
+  <img src="assets/images/sapphire_gem.jpeg" alt="sapphire_gem" class = "sapphire crystal">
+
+<!-- <div> Gem total box here</div> -->
+<h2>Your total score is:</h2>
+<section class = "crystalValue"> </section>
+
+</container>
+
+  <script src="assets/javascript/game.js"></script>
+
+</body>
+
+</html>
